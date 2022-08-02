@@ -1,5 +1,19 @@
 <html>
     <script>
-        
+    function primo(num){
+        var divisores=0;
+
+        for(var count=1 ; count<=num ; count++){
+            if(num % count == 0){
+            divisores++;
+            }  
+        }
+        if(divisores==2){
+            return num+' é primo';
+        }  
+        if(divisores!=2){
+            return num+ ' não é primo';
+        }
+    }
     </script>
 </html>
